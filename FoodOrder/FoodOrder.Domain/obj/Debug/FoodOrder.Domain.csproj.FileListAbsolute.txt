@@ -1,0 +1,4 @@
+D:\Учеба\Курсы\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Debug\FoodOrder.Domain.dll
+D:\Учеба\Курсы\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Debug\FoodOrder.Domain.pdb
+D:\Учеба\Курсы\ASP.NET\FoodOrder\FoodOrder.Domain\obj\Debug\FoodOrder.Domain.dll
+D:\Учеба\Курсы\ASP.NET\FoodOrder\FoodOrder.Domain\obj\Debug\FoodOrder.Domain.pdb
