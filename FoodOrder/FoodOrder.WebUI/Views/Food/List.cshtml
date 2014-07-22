@@ -1,0 +1,14 @@
+﻿@model IEnumerable<FoodOrder.Domain.Entities.Food>
+
+@{
+    ViewBag.Title = "List";
+}
+
+@foreach(var f in Model)
+{
+    <div class="item">
+        <h3>@f.Name</h3>
+        @f.Description
+        <h4>@f.Price.ToString("c")</h4>
+    </div>
+}

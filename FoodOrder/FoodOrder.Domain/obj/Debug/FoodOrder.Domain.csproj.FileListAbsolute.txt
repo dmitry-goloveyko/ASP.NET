@@ -2,3 +2,8 @@ D:\Учеба\Курсы\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Debug\FoodOrder.
 D:\Учеба\Курсы\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Debug\FoodOrder.Domain.pdb
 D:\Учеба\Курсы\ASP.NET\FoodOrder\FoodOrder.Domain\obj\Debug\FoodOrder.Domain.dll
 D:\Учеба\Курсы\ASP.NET\FoodOrder\FoodOrder.Domain\obj\Debug\FoodOrder.Domain.pdb
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Debug\FoodOrder.Domain.dll
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Debug\FoodOrder.Domain.pdb
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\obj\Debug\FoodOrder.Domain.csprojResolveAssemblyReference.cache
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\obj\Debug\FoodOrder.Domain.dll
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\obj\Debug\FoodOrder.Domain.pdb
