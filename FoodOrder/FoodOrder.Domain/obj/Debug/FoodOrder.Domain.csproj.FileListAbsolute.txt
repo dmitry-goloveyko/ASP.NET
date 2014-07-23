@@ -7,3 +7,8 @@ D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Debug\FoodO
 D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\obj\Debug\FoodOrder.Domain.csprojResolveAssemblyReference.cache
 D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\obj\Debug\FoodOrder.Domain.dll
 D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\obj\Debug\FoodOrder.Domain.pdb
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Debug\FoodOrder.Domain.dll.config
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Debug\EntityFramework.dll
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Debug\EntityFramework.xml
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Debug\EntityFramework.SqlServer.xml

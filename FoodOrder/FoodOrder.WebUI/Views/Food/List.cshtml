@@ -1,10 +1,11 @@
-﻿@model IEnumerable<FoodOrder.Domain.Entities.Food>
+﻿@model FoodOrder.WebUI.Models.FoodListViewModel
 
 @{
-    ViewBag.Title = "List";
+  ViewBag.Title = "Foods";
 }
 
-@foreach(var f in Model)
+
+@foreach(var f in Model.Foods)
 {
     <div class="item">
         <h3>@f.Name</h3>
@@ -12,3 +13,7 @@
         <h4>@f.Price.ToString("c")</h4>
     </div>
 }
+
+<div class="pager">
+	@Html.PageLinks(Model.pagingInfo, x => Url.Action("List", new { page = x }))
+</div>

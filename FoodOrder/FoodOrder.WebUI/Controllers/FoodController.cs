@@ -1,5 +1,6 @@
 ﻿using FoodOrder.Domain.Abstract;
 using FoodOrder.Domain.Entities;
+using FoodOrder.WebUI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +12,30 @@ namespace FoodOrder.WebUI.Controllers
     public class FoodController : Controller
     {
         private IFoodRepository repository;
+        public int PageSize = 4;
 
         public FoodController(IFoodRepository repository)
         {
             this.repository = repository;
         }
 
-        public ViewResult List()
+        public ViewResult List(int page = 1)
         {
-            return View(repository.Foods);
-        }
+			FoodListViewModel model = new FoodListViewModel
+			{
+				Foods = repository.Foods
+				  .OrderBy(p => p.FoodID)
+				  .Skip((page - 1) * PageSize)
+				  .Take(PageSize),
+				pagingInfo = new PagingInfo
+				{
+					CurrentPage = page,
+					ItemsPerPage = PageSize,
+					TotalItems = repository.Foods.Count()
+				}
+			};
 
+            return View(model);
+        }
     }
 }

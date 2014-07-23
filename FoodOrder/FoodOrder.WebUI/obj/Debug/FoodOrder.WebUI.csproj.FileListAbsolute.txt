@@ -70,3 +70,5 @@ D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.WebUI\bin\System.Web.W
 D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.WebUI\obj\Debug\FoodOrder.WebUI.csprojResolveAssemblyReference.cache
 D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.WebUI\obj\Debug\FoodOrder.WebUI.dll
 D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.WebUI\obj\Debug\FoodOrder.WebUI.pdb
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.WebUI\bin\EntityFramework.SqlServer.dll
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.WebUI\bin\EntityFramework.SqlServer.xml

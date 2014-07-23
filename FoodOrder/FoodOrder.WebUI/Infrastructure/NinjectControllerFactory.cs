@@ -7,6 +7,7 @@ using System.Linq;
 using Moq;
 using FoodOrder.Domain.Abstract;
 using FoodOrder.Domain.Entities;
+using FoodOrder.Domain.Concrete;
 
 namespace FoodOrder.WebUI.Infrastructure
 {
@@ -27,14 +28,7 @@ namespace FoodOrder.WebUI.Infrastructure
 
         private void AddBindings()
         {
-            Mock<IFoodRepository> mock = new Mock<IFoodRepository>();
-            mock.Setup(m => m.Foods).Returns(new List<Food> {
-              new Food { Name = "Pizza", Price = 25 },
-              new Food { Name = "Noodle", Price = 179 },
-              new Food { Name = "Sushi", Price = 95 }
-            }.AsQueryable());
-
-            ninjectKernel.Bind<IFoodRepository>().ToConstant(mock.Object);
+            ninjectKernel.Bind<IFoodRepository>().To<EFFoodRepository>();
         }
     }
 }
