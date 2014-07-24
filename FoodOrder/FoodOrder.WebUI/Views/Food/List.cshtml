@@ -7,11 +7,7 @@
 
 @foreach(var f in Model.Foods)
 {
-    <div class="item">
-        <h3>@f.Name</h3>
-        @f.Description
-        <h4>@f.Price.ToString("c")</h4>
-    </div>
+    Html.RenderPartial("FoodSummary", f);
 }
 
 <div class="pager">

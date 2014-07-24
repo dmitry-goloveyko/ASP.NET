@@ -50,6 +50,7 @@
     <Compile Include="Abstract\IFoodRepository.cs" />
     <Compile Include="Concrete\EFDBContext.cs" />
     <Compile Include="Concrete\EFFoodRepository.cs" />
+    <Compile Include="Entities\Cart.cs" />
     <Compile Include="Entities\Food.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

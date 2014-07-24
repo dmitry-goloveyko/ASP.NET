@@ -1,61 +1,128 @@
-﻿body {
-    font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-    color: #232323;
-    background-color: #fff;
+﻿body
+{
+  font-family: Cambria, Georgia, "Times New Roman";
+  margin: 0;
+}
+											
+div#header div.title, div.item h3, div.item h4, div.pager a
+{
+  font: bold 1em "Arial Narrow", "Franklin Gothic Medium", Arial;
 }
 
-header, footer, nav, section {
-    display: block;
+div#header
+{
+  background-color: #444;
+  border-bottom: 2px solid #111;
+  color: White;
 }
 
+  div#header div.title
+  {
+    font-size: 2em;
+    padding: .6em;
+  }
 
-/* Styles for basic forms
------------------------------------------------------------*/
-fieldset {
-    border: 1px solid #ddd;
-    padding: 0 1.4em 1.4em 1.4em;
-    margin: 0 0 1.5em 0;
+div#content
+{
 }
 
-legend {
-    font-size: 1.2em;
-    font-weight: bold;
+div#categories
+{
+  float: left;
+  width: 8em;
+  padding: .3em;
 }
 
-textarea {
-    min-height: 75px;
+div.item
+{
+  border-top: 1px solid gray;
+  padding-top: .7em;
+  margin:0 auto;
+  margin-bottom: .7em;
+  width:50%;
 }
 
-.editor-label {
-    margin: 1em 0 0 0;
+  div.item:first-child
+  {
+    border-top: none;
+    padding-top: 0;	  
+	width:50%;
+  }
+
+  div.item h3
+  {
+    font-size: 1.3em;
+    margin: 0 0 .25em 0;
+  }
+
+  div.item h4
+  {
+    font-size: 1.1em;
+    margin: .4em 0 0 0;
+  }
+
+div.pager
+{
+  text-align:center;
+  border-top: 2px solid silver;
+  padding: .5em 0 0 0;
+  margin-top: 1em;
 }
 
-.editor-field {
-    margin: 0.5em 0 0 0;
+  div.pager A
+  {
+    font-size: 1.1em;
+    color: #666;
+    text-decoration: none;
+    padding: 0 .4em 0 .4em;
+  }
+
+    div.pager A:hover
+    {
+      background-color: Silver;
+    }
+
+    div.pager A.selected
+    {
+      background-color: #353535;
+      color: White;
+    }
+
+form {
+	margin: 0;
+	padding: 0;
 }
 
-
-/* Styles for validation helpers
------------------------------------------------------------*/
-.field-validation-error {
-    color: #f00;
+div.item form { 
+	float:right; 
 }
 
-.field-validation-valid {
-    display: none;
+div.item input {
+  color:White; 
+  background-color: #333; 
+  border: 1px solid black; 
+  cursor:pointer;
 }
 
-.input-validation-error {
-    border: 1px solid #f00;
-    background-color: #fee;
+h2 { 
+	margin-top: 0.3em 
 }
 
-.validation-summary-errors {
-    font-weight: bold;
-    color: #f00;
+tfoot td { 
+	border-top: 1px dotted gray; 
+	font-weight: bold; 
 }
 
-.validation-summary-valid {
-    display: none;
+.actionButtons a, input.actionButtons {
+  font: .8em Arial; 
+  color: White; 
+  margin: .5em;
+  text-decoration: none; 
+  padding: .15em 1.5em .2em 1.5em;
+  background-color: #353535; 
+  border: 1px solid black;
+}
+
+table {
+	text-align:center;
 }
