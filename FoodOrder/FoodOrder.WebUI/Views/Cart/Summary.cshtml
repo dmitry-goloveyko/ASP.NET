@@ -1,0 +1,12 @@
+﻿@model FoodOrder.Domain.Entities.Cart
+
+<div id="cart-widget">
+	<span class="caption">
+		<b>В корзине:</b>
+		@Model.Lines.Sum(x => x.Quantity)
+		позиции, 
+		@Model.ComputeTotalValue().ToString("c")
+	</span>
+
+	@Html.ActionLink("К корзине", "Index", "Cart", new { returnUrl = Request.Url.PathAndQuery}, null)
+</div>

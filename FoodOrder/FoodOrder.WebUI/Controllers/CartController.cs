@@ -18,46 +18,40 @@ namespace FoodOrder.WebUI.Controllers
 			repository = repo;
 		}
 
-		public ViewResult Index(string returnUrl)
+		public ViewResult Index(Cart cart, string returnUrl)
 		{
 			return View(new CartIndexViewModel
 			{
-				Cart = GetCart(),
+				Cart = cart,
 				ReturnUrl = returnUrl
 			});
 		}
 
-		public RedirectToRouteResult AddToCart(int foodId, string returnUrl)
+		public RedirectToRouteResult AddToCart(Cart cart, int foodId, string returnUrl)
 		{
 			Food food = repository.Foods
 			.FirstOrDefault(f => f.FoodID == foodId);
 			if (food != null)
 			{
-				GetCart().AddItem(food, 1);
+				cart.AddItem(food, 1);
 			}
 			return RedirectToAction("Index", new { returnUrl });
 		}
 
-		public RedirectToRouteResult RemoveFromCart(int foodId, string returnUrl)
+		public RedirectToRouteResult RemoveFromCart(Cart cart, int foodId, string returnUrl)
 		{
 			Food food = repository.Foods
 			.FirstOrDefault(f => f.FoodID == foodId);
 			if (food != null)
 			{
-				GetCart().RemoveLine(food);
+				cart.RemoveLine(food);
 			}
 			return RedirectToAction("Index", new { returnUrl });
 		}
 
-		private Cart GetCart()
+		public PartialViewResult Summary(Cart cart)
 		{
-			Cart cart = (Cart)Session["Cart"];
-			if (cart == null)
-			{
-				cart = new Cart();
-				Session["Cart"] = cart;
-			}
-			return cart;
+			return PartialView(cart);
 		}
     }
 }

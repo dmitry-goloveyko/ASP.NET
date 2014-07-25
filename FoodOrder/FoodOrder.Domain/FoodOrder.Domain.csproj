@@ -52,6 +52,7 @@
     <Compile Include="Concrete\EFFoodRepository.cs" />
     <Compile Include="Entities\Cart.cs" />
     <Compile Include="Entities\Food.cs" />
+    <Compile Include="Entities\ShippingData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

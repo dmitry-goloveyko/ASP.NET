@@ -7,6 +7,8 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using FoodOrder.WebUI.Infrastructure;
+using FoodOrder.Domain.Entities;
+using FoodOrder.WebUI.Binders;
 
 namespace FoodOrder.WebUI
 {
@@ -25,7 +27,7 @@ namespace FoodOrder.WebUI
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
-
+			ModelBinders.Binders.Add(typeof (Cart), new CartModelBinder());
         }
     }
 }

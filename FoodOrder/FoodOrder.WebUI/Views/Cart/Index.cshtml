@@ -4,14 +4,14 @@
     ViewBag.Title = "Cart";
 }
 
-<h2>Your cart</h2>
-<table width="90%">
+<h2>Ваша корзина</h2>
+<table width="50%" style="margin:0 auto">
   <thead>
     <tr>
-      <th>Quantity</th>
-      <th>Item</th>
-      <th>Price</th>
-      <th>Subtotal</th>
+      <th>Количество</th>
+      <th>Еда</th>
+      <th>Цена за единицу</th>
+      <th>Общая цена</th>
     </tr>
   </thead>
   <tbody>
@@ -21,12 +21,19 @@
         <td>@line.Food.Name</td>
         <td>@line.Food.Price.ToString("c")</td>
         <td>@((line.Quantity * line.Food.Price).ToString("c"))</td>
+		<td>
+			@using (Html.BeginForm("RemoveFromCart", "Cart")) {
+			  @Html.Hidden("FoodId", line.Food.FoodID)
+			  @Html.HiddenFor(x => x.ReturnUrl)
+			  <input class="actionButtons" type="submit" value="Убрать" />
+			}
+		</td>
       </tr>
     }
   </tbody>
   <tfoot>
     <tr>
-      <td colspan="3">Total:</td>
+      <td colspan="3">Итого:</td>
       <td >
         @Model.Cart.ComputeTotalValue().ToString("c")
       </td>
@@ -34,5 +41,5 @@
   </tfoot>
 </table>
 <p class="actionButtons">
-  <a href="@Model.ReturnUrl">Continue shopping</a>
+  <a style="margin:0 auto" href="@Model.ReturnUrl">Вернуться на главную</a>
 </p>
