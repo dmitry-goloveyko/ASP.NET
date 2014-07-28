@@ -53,5 +53,10 @@ namespace FoodOrder.WebUI.Controllers
 		{
 			return PartialView(cart);
 		}
+
+		public ViewResult Checkout()
+		{
+			return View(new ShippingData());
+		}
     }
 }
