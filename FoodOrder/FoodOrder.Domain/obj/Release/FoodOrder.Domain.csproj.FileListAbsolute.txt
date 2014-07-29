@@ -1,0 +1,10 @@
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Release\FoodOrder.Domain.dll.config
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Release\FoodOrder.Domain.dll
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Release\FoodOrder.Domain.pdb
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Release\EntityFramework.dll
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Release\EntityFramework.SqlServer.dll
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Release\EntityFramework.xml
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\bin\Release\EntityFramework.SqlServer.xml
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\obj\Release\FoodOrder.Domain.csprojResolveAssemblyReference.cache
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\obj\Release\FoodOrder.Domain.dll
+D:\Goloveyko\Dmitry Goloveyko\ASP.NET\FoodOrder\FoodOrder.Domain\obj\Release\FoodOrder.Domain.pdb

@@ -23,6 +23,11 @@ namespace FoodOrder.WebUI.Controllers
 			return View(repository.Foods);
 		}
 
+		public ViewResult Create()
+		{
+			return View("Edit", new Food());
+		}
+
 		public ViewResult Edit(int foodId)
 		{
 			Food food = repository.Foods
