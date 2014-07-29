@@ -16,5 +16,27 @@ namespace FoodOrder.Domain.Concrete
         {
             get { return context.Foods; }
         }
+
+		public void SaveFood(Food food)
+		{
+			if (food.FoodID == 0)
+			{
+				context.Foods.Add(food);
+			}
+			else
+			{
+				Food dbEntry = context.Foods.Find(food.FoodID);
+				if (dbEntry != null)
+				{
+					dbEntry.Name = food.Name;
+					dbEntry.Description = food.Description;
+					dbEntry.Price = food.Price;
+					dbEntry.DefaultPreparationTime = food.DefaultPreparationTime;
+					dbEntry.ImageData = food.ImageData;
+					dbEntry.ImageMimeType = food.ImageMimeType;
+				}
+			}
+			context.SaveChanges();
+		}
     }
 }

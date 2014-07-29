@@ -8,6 +8,11 @@
 </head>
 <body>
     <div>
+		@if(TempData != null)
+		{
+			<div class="Message">@TempData["message"]</div>
+		}
+
         @RenderBody()
     </div>
 </body>

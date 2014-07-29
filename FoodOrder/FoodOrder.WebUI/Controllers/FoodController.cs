@@ -37,5 +37,19 @@ namespace FoodOrder.WebUI.Controllers
 
             return View(model);
         }
+
+		public FileContentResult GetImage(int foodId)
+		{
+			Food food = repository.Foods.FirstOrDefault ( f => f.FoodID == foodId);
+
+			if(food != null)
+			{
+				return File(food.ImageData, food.ImageMimeType);
+			}
+			else 
+			{
+				return null;
+			}
+		}
     }
 }

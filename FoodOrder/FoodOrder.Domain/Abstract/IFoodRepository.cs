@@ -10,5 +10,6 @@ namespace FoodOrder.Domain.Abstract
     public interface IFoodRepository
     {
         IQueryable<Food> Foods { get; }
+		void SaveFood(Food food);
     }
 }

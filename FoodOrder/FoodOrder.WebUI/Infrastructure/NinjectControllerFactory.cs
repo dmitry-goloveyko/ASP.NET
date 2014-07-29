@@ -8,6 +8,8 @@ using Moq;
 using FoodOrder.Domain.Abstract;
 using FoodOrder.Domain.Entities;
 using FoodOrder.Domain.Concrete;
+using FoodOrder.WebUI.Infrastructure.Abstract;
+using FoodOrder.WebUI.Infrastructure.Concrete;
 
 namespace FoodOrder.WebUI.Infrastructure
 {
@@ -29,6 +31,8 @@ namespace FoodOrder.WebUI.Infrastructure
         private void AddBindings()
         {
             ninjectKernel.Bind<IFoodRepository>().To<EFFoodRepository>();
+
+			ninjectKernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
         }
     }
 }

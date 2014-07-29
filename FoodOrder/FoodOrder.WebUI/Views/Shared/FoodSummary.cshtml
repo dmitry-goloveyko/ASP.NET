@@ -1,12 +1,18 @@
 ﻿@model FoodOrder.Domain.Entities.Food
 
 <div class="item">
-  <h3>@Model.Name</h3>
-  @Model.Description
-  @using (Html.BeginForm("AddToCart", "Cart")) {
+	
+	@if(Model.ImageData != null)
+	{
+		<img style="float: left; margin-right:10px;" width="75" height="75" src="@Url.Action("GetImage", "Food", new {Model.FoodID})" />
+	}
+
+	<h3>@Model.Name</h3>
+	@Model.Description
+	@using (Html.BeginForm("AddToCart", "Cart")) {
 	@Html.HiddenFor(x => x.FoodID)
 	@Html.Hidden("returnUrl", Request.Url.PathAndQuery)
 	<input type="submit" value="+ Добавить в корзину" />
-  }
-  <h4>@Model.Price.ToString("c")</h4>
+	}
+	<h4>@Model.Price.ToString("c")</h4>
 </div>
